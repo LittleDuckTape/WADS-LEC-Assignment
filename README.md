@@ -16,16 +16,16 @@ The project also includes **Swagger documentation** for exploring and testing th
 ---
 # How to Run:
 Install dependencies:
-type "npm install" in terminal
+type **npm install** in terminal
 
 Start development server:
-type "npm run dev" in terminal
+type **npm run dev** in terminal
 
 Open in browser:
 click link for local or network host
 
 Swagger API Documentation:
-type "/docs" at the end of url
+type **/docs** at the end of url
 
 ---
 # API Design
@@ -49,14 +49,17 @@ Invoke-RestMethod -Method Post -Uri "http://localhost:3000/api/tasks" -ContentTy
 
 ### Get task detail
 Invoke-RestMethod -Method Get -Uri "http://localhost:3000/api/tasks/{id}"
+
 Note: change {id} to selected task id
 
 ### Update task
-Invoke-RestMethod -Method Put -Uri "http://localhost:3000/api/tasks/1" -ContentType "application/json" -Body '{"title":"{new name}","done":{true/false}}'
+Invoke-RestMethod -Method Put -Uri "http://localhost:3000/api/tasks/{id}" -ContentType "application/json" -Body '{"title":"{new name}","done":{true/false}}'
+
 Note: change {id} to selected task id and type true or false
 
 ### Delete task
 Invoke-RestMethod -Method Delete -Uri "http://localhost:3000/api/tasks/{id}"
+
 Note: change {id} to selected task id
 
 ---
