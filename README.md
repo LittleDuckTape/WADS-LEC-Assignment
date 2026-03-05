@@ -73,6 +73,9 @@ Note: change {id} to selected task id
 # Additional Info
 
 Name: Irene Angelina
+
 Class: L4AC
+
 Student ID: 2802501060
+
 Course: Web Application Development and Security (COMP6703001)
